@@ -31,8 +31,8 @@ public class CreateBaseMap : MonoBehaviour
     private void SetBaseMap(string mapPath)
     {
         File.WriteAllText(mapPath, "Map Created\n\n");
-        for (int i = 0; i <= 300; i++) {
-            for (int j = 0; j <= 300; j++) {
+        for (int i = 0; i <= 10; i++) {
+            for (int j = 0; j <= 10; j++) {
                 Instantiate(baseBloc.prefab, currentPosition, Quaternion.identity, transform);
                 File.AppendAllText(mapPath, "d");
                 Debug.Log("J = " + j + "I = " + i);
