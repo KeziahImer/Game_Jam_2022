@@ -33,7 +33,6 @@ public class EnemyGFX : MonoBehaviour
         }
     }
 
-
     private void MoveTowardsTarget()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
