@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -33,5 +34,6 @@ public class PlayerMovement : MonoBehaviour
     {
         gameObject.active = false;
         moveSpeed = 0f;
+        SceneManager.LoadScene(2);
     }
 }
