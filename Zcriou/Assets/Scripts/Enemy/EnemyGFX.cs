@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Pathfinding;
 
 public class EnemyGFX : MonoBehaviour
 {
+    public float attackSpeed = 1f;
     public float speed = 3f;
     public Transform target;
+    public int dmg;
 
     void Update()
     {
@@ -16,14 +17,22 @@ public class EnemyGFX : MonoBehaviour
         }    
     }
 
-    private void OnCollisionStay2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "BasicWizard")
-        {
-            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(20);
-            Debug.Log("Bonjour");
+        Debug.Log(other.gameObject.tag);
+        if (other.gameObject.tag == "BasicWizard") {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(dmg);
         }
     }
+
+    void OnCollisionStay2D(Collision2D other)
+    {
+        Debug.Log(other.gameObject.tag);
+        if (other.gameObject.tag == "BasicWizard") {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(dmg);
+        }
+    }
+
 
     private void MoveTowardsTarget()
     {

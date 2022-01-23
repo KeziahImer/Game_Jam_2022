@@ -430,8 +430,8 @@ GameObject:
   - component: {fileID: 4196000582598138935}
   - component: {fileID: 4196000582598138920}
   m_Layer: 0
-  m_Name: BasicWIzard
-  m_TagString: Untagged
+  m_Name: BasicWizard
+  m_TagString: BasicWizard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
