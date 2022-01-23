@@ -14,13 +14,6 @@ public class Shooting : MonoBehaviour
         {
             Shoot();
         }
-<<<<<<< HEAD
-=======
-
-        //check = this.transform.parent.gameObject;
-        //speed = check.GetComponent<PlayerMovement>().getSpeed();
-        //Marche pas à continuer
->>>>>>> 82e32217cf8243d855f653371433350901d1f29e
     }
 
     void Shoot()
