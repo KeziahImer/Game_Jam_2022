@@ -5,13 +5,13 @@ using UnityEngine;
 public class EnemyGFX : MonoBehaviour
 {
     public float attackSpeed = 1f;
-    public float speed = 3f;
+    public float speed = 0f;
     public Transform target;
     public int dmg;
 
     public int maxHealth = 100;
     public int currentHealth;
-    
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -25,25 +25,28 @@ public class EnemyGFX : MonoBehaviour
         }
 
         if (currentHealth == 0) {
-            Destroy(gameObject);
+            gameObject.active = false;
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    public void SetSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "BasicWizard") {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(dmg);
         }
     }
 
-    void OnCollisionStay2D(Collision2D other)
+    public void OnCollisionStay2D(Collision2D other)
     {
-        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "BasicWizard") {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(dmg);
         }
     }
-
 
     private void MoveTowardsTarget()
     {

@@ -31,10 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Kill()
     {
+        gameObject.active = false;
         moveSpeed = 0f;
-    }
-
-    public float getSpeed() {
-        return (moveSpeed);
     }
 }
