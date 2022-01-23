@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5975624318872846253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9068034505229936977}
+  - component: {fileID: 1657736385567274900}
+  m_Layer: 0
+  m_Name: MapCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9068034505229936977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5975624318872846253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1657736385567274900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5975624318872846253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4089e8f966e55f74d87a1ec5d1c50104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mappingData:
+  - character: 100
+    prefab: {fileID: 6428837548541159484, guid: d0e729cb394624f49a5ae29f039cbbbd, type: 3}
+  - character: 116
+    prefab: {fileID: 7227828335373395048, guid: 2b0c4902f093e7f4bb4e5cb025257080, type: 3}
+  - character: 114
+    prefab: {fileID: 3267636339113990095, guid: 7ba4442226578034aa6150787f0c560d, type: 3}
+  - character: 105
+    prefab: {fileID: 862769935859013151, guid: 24343136209924342a23402852cd42a0, type: 3}
+  - character: 99
+    prefab: {fileID: 7268433961746746704, guid: b1816f7f949c20941a4e87dda09e0292, type: 3}
+  - character: 102
+    prefab: {fileID: 7226854243589202059, guid: 65a883e879741a8429707ea37c1e80c4, type: 3}
+  - character: 101
+    prefab: {fileID: 9148397269426652761, guid: 797b9bd49e8f62c47be0a7e3cceb23f7, type: 3}
+  - character: 119
+    prefab: {fileID: 3045008564169113891, guid: 425a0b36ecd512c4499074285815b74d, type: 3}
+  map: 
+  frequency: 1000
+  height: 100
+  width: 100
