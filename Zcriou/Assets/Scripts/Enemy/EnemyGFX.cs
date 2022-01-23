@@ -16,6 +16,15 @@ public class EnemyGFX : MonoBehaviour
         }    
     }
 
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "BasicWizard")
+        {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(20);
+            Debug.Log("Bonjour");
+        }
+    }
+
     private void MoveTowardsTarget()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
