@@ -33,4 +33,8 @@ public class PlayerMovement : MonoBehaviour
     {
         moveSpeed = 0f;
     }
+
+    public float getSpeed() {
+        return (moveSpeed);
+    }
 }
