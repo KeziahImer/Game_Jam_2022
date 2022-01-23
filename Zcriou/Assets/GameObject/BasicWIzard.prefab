@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4366002635436771504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 12, z: 0}
+  m_LocalPosition: {x: 0, y: 0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366002635700635109}
@@ -166,7 +166,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.038868427, y: 0.060995102}
+  m_Offset: {x: 0.038868427, y: -0.06457114}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -177,7 +177,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6771021, y: 0.7746334}
+  m_Size: {x: 0.6771021, y: 0.806025}
   m_EdgeRadius: 0
 --- !u!114 &4366002635700635130
 MonoBehaviour:
@@ -193,4 +193,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4366002635436771505}
   bulletPrefab: {fileID: 7146038018548351426, guid: cf0bb4e3c140c184792780d4131aeb81, type: 3}
-  bulletForce: 20
+  bulletForce: 7
