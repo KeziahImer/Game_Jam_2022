@@ -23,6 +23,10 @@ public class PlayerHealth : MonoBehaviour
         } else if (Input.GetKeyDown(KeyCode.LeftAlt)) {
             Heal(20);
         }
+
+        if (currentHealth == 0) {
+            gameObject.GetComponent<PlayerMovement>().Kill();
+        }
     }
     
     public void TakeDamage(int damage)

@@ -10,5 +10,10 @@ public class Bullet : MonoBehaviour
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 0.3f);
         Destroy(gameObject);
+
+        if (collision.gameObject.tag == "Enemy") {
+            collision.gameObject.GetComponent<EnemyGFX>().TakeDamage(50);
+        }
     }
+
 }
